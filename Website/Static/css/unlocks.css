@@ -1,0 +1,54 @@
+/* global settings */
+
+
+#title{
+    box-shadow: 0 1px #a2a9b1;
+    display:flex;
+    font-family:'Linux Libertine','Georgia','Times',serif;
+    font-weight: normal;
+    line-height: 1.3;
+    direction: ltr;
+    font-size: 1.8em;
+    word-wrap: break-word;
+}
+
+table{
+    display: table;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    background-color: #f8f9fa;
+    color: #202122;
+    margin: 1em 0;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #eaecf0;
+    text-align: center;
+}
+
+th{
+    padding: 0.2em 0.4em;
+    border: 1px solid #a2a9b1;
+}
+
+tr{
+    padding: 0.2em 0.4em;
+    border: 1px solid #a2a9b1;
+
+}
+
+td{
+    padding: 0.2em 0.4em;
+    border: 1px solid #a2a9b1;
+}
+
+td > img{
+    width: 150px;
+}
+
+#wikitable{
+    padding: 0.2em 0.4em;
+}

@@ -1,0 +1,47 @@
+/* global settings */
+body{
+    background-color: white;
+    font-family: Arial;
+}
+
+img{
+    width: 50px;
+}
+
+/* LogoBar */
+#Logobar{
+    font-family: 'Linux Libertine','Georgia','Times',serif;
+    position:relative;
+    z-index: index 4;
+    display: flex;
+    justify-content:flex-start;
+    box-shadow: 0 1px #a2a9b1;
+    align-items: center;
+    background-color:white;
+    padding-left: 10px;
+}
+
+/* NavBar */
+#navbar{
+    font-family: sans-serif;
+    box-shadow: 0 1px #a2a9b1;
+    background-color: white;
+}
+
+#Logobar-Text > *{
+    margin: 5px;
+}
+
+#Links{
+    display:inline-block;
+    padding: 0px;
+    margin: 5px;
+    
+}
+
+
+
+/* Content */
+#content{
+    background-color: white;
+}

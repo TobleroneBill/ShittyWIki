@@ -1,0 +1,45 @@
+{%extends "base.html"%}
+{% block title %}Unlocks{%endblock%}
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/unlocks.css') }}">
+{%endblock%}
+
+{%block content%}
+
+<div>
+    <h2 id="title">Progress</h2>
+</div>
+
+<p>
+    is an American actor, director, producer and screenwriter, who has appeared in films, television series, video games and stage plays.
+</p>
+
+<table class="wikitable">
+    <thead>
+        <tr>
+            <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Name</th>
+            <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Link</th>
+            <th class="headerSort" tabindex="0" role="columnheader button" title="Sort ascending">Image</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+        <tr>
+            <td>
+                Cleopatra
+            </td>
+            <td>
+                <a href="https://en.wikipedia.org/wiki/Cleopatra">
+                    https://en.wikipedia.org/wiki/Cleopatra
+                </a>
+            </td>
+            <td>
+                <img src="{{ url_for('static', filename='images/94th Academy Awards.jpg') }}">
+            </td>
+        </tr>
+    
+    </tbody>
+</table>
+
+
+{% endblock %}
