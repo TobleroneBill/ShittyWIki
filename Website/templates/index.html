@@ -2,14 +2,40 @@
 {% block title %} Gamin {%endblock%}
 
 {% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/unlocks.css') }}">
+<script src="{{ url_for('static', filename='Game.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Game.css') }}">
 {%endblock%}
 
 
 {%block content%}
 <div id="game">
-    <h2 id="title"></h2>
+    <h2 id="title"> DA GAME</h2>
     
+    <div id="gamediv">
+        <div class="imagebox" id="1">
+            <p><b>Title</b></p>
+            <img src="{{ url_for('static', filename='images/94th Academy Awards.jpg') }}"> 
+        </div>
+        <div class="imagebox" id="2"> 2</div>
+        <div class="imagebox" id="3"> 3</div>
+    </div>
+
+    <div id="gamediv">
+        <div class="imagebox" id="4"> 4</div>
+        <div class="imagebox" id="5"> 5</div>
+        <div class="imagebox" id="6"> 6</div>
+    </div>
+
+    <div id="gamediv">
+        <div class="imagebox" id="7"> 7</div>
+        <div class="imagebox" id="8"> 8</div>
+        <div class="imagebox" id="9"> 9</div>
+    </div>
+</div>
+
+<div>
+    lol
+</div>
 </div>
 
 {%endblock%}
