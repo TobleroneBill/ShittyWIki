@@ -2,7 +2,6 @@
 {% block title %} Gamin {%endblock%}
 
 {% block css %}
-<script src="{{ url_for('static', filename='Game.js') }}"></script>
 <link rel="stylesheet" href="{{ url_for('static', filename='css/Game.css') }}">
 {%endblock%}
 
@@ -12,30 +11,28 @@
     <h2 id="title"> DA GAME</h2>
     
     <div id="gamediv">
-        <div class="imagebox" id="1">
-            <p><b>Title</b></p>
-            <img src="{{ url_for('static', filename='images/94th Academy Awards.jpg') }}"> 
+        <div class="imagebox" id="1" ondragover="allowDrop(event)" ondrop="drop(event)"> 1 </div>
+        <div class="imagebox" id="2" ondragover="allowDrop(event)" ondrop="drop(event)"> 2 </div>
+        <div class="imagebox" id="3" ondragover="allowDrop(event)" ondrop="drop(event)"> 3 </div>
+    </div>
+
+    <div id="gamediv">
+        <div class="imagebox" id="4" ondragover="allowDrop(event)" ondrop="drop(event)"> 4 </div>
+        <div class="imageboxMain">
+            <p><b>Image</b></p>
+            <img id="dragpic" draggable="true" src="{{ url_for('static', filename='images/94th Academy Awards.jpg') }}"> 
         </div>
-        <div class="imagebox" id="2"> 2</div>
-        <div class="imagebox" id="3"> 3</div>
+        <div class="imagebox" id="5" ondragover="allowDrop(event)" ondrop="drop(event)"> 6 </div>
     </div>
 
     <div id="gamediv">
-        <div class="imagebox" id="4"> 4</div>
-        <div class="imagebox" id="5"> 5</div>
-        <div class="imagebox" id="6"> 6</div>
-    </div>
-
-    <div id="gamediv">
-        <div class="imagebox" id="7"> 7</div>
-        <div class="imagebox" id="8"> 8</div>
-        <div class="imagebox" id="9"> 9</div>
+        <div class="imagebox" id="6" ondragover="allowDrop(event)" ondrop="drop(event)"> 7 </div>
+        <div class="imagebox" id="7" ondragover="allowDrop(event)" ondrop="drop(event)"> 8 </div>
+        <div class="imagebox" id="8" ondragover="allowDrop(event)" ondrop="drop(event)"> 9 </div>
     </div>
 </div>
 
-<div>
-    lol
-</div>
 </div>
 
+<script src="{{ url_for('static', filename='Game.js') }}"></script>
 {%endblock%}

@@ -12,49 +12,7 @@
     word-wrap: break-word;
 }
 
-table{
-    display: table;
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 2px;
-    background-color: #f8f9fa;
-    color: #202122;
-    margin: 1em 0;
-    border: 1px solid #a2a9b1;
-    border-collapse: collapse;
-}
-
-thead{
-    background-color: #eaecf0;
-    text-align: center;
-}
-
-th{
-    padding: 0.2em 0.4em;
-    border: 1px solid #a2a9b1;
-}
-
-tr{
-    padding: 0.2em 0.4em;
-    border: 1px solid #a2a9b1;
-
-}
-
-td{
-    padding: 0.2em 0.4em;
-    border: 1px solid #a2a9b1;
-}
-
-td > img{
-    width: 150px;
-}
-
-#wikitable{
-    padding: 0.2em 0.4em;
-}
-
 .imagebox{
-
 
     border: 1px solid #c8ccd1;
     font-size: 94%;
@@ -86,4 +44,17 @@ td > img{
 
 #game{
     align-items: center;
+}
+
+.placeAni{
+    animation: placeCorrect 1s ;
+}
+
+@keyframes placeCorrect {
+	0%{
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
