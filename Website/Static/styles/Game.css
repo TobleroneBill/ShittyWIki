@@ -1,5 +1,8 @@
-/* global settings */
-
+/* global settings   background-image: linear-gradient(red, yellow);*/
+body{
+    overflow-anchor: none;
+    
+}
 
 #title{
     box-shadow: 0 1px #a2a9b1;

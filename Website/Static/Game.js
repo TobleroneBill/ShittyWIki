@@ -26,8 +26,6 @@ function drop(e){
     
     // Remove Image in sync with animation (1s)
     setTimeout(function(){
-        //pic.remove()
-        box = document.getElementsByClassName("imageboxMain")
         location.reload()
     },800)
 

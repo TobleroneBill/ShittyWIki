@@ -2,7 +2,7 @@
 {% block title %} Gamin {%endblock%}
 
 {% block css %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/Game.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/Game.css') }}">
 {%endblock%}
 
 
@@ -18,7 +18,7 @@
 
     <div id="gamediv">
         <div class="imagebox" id="4" ondragover="allowDrop(event)" ondrop="drop(event)"> 4 </div>
-        <div class="imageboxMain">
+        <div class="imagebox">
             <p><b>Image</b></p>
             <img id="dragpic" draggable="true" src="{{ url_for('static', filename='images/94th Academy Awards.jpg') }}"> 
         </div>
