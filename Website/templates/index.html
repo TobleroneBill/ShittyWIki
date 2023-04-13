@@ -2,7 +2,7 @@
 {% block title %} Gamin {%endblock%}
 
 {% block css %}
-<link rel="stylesheet" href="../static/styles/Game.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/Game.css') }}">
 {%endblock%}
 
 
@@ -20,7 +20,7 @@
         <div class="imagebox" id="4" ondragover="allowDrop(event)" ondrop="drop(event)"> 4 </div>
         <div class="imagebox">
             <p><b>Image</b></p>
-            <img id="dragpic" draggable="true" src="../static/images/2022 Commonwealth Games.jpg"> 
+            <img id="dragpic" draggable="true" src="{{ url_for('static', filename='images/94th Academy Awards.jpg') }}"> 
         </div>
         <div class="imagebox" id="5" ondragover="allowDrop(event)" ondrop="drop(event)"> 6 </div>
     </div>
@@ -34,5 +34,5 @@
 
 </div>
 
-<script src="../static/Game.js"></script>
+<script src="{{ url_for('static', filename='/Game.js') }}"></script>
 {%endblock%}
