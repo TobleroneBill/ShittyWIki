@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Killing port"
+# Kills previous server connections
+fuser -k 8000/tcp
+# starts the server for 1 connections
+gunicorn main:app
