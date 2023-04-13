@@ -11,7 +11,7 @@
         Base 
         {%endblock%}
     </title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/base.css/') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/base.css') }}">
     <!-- CSS Page overrides-->
     {% block css %}
     {%endblock%}
@@ -22,7 +22,7 @@
     {%block pageJS%}
     <script
     type="text/javascript"
-    src="{{ url_for('static',filename='/test.js/')}}"
+    src="{{ url_for('static',filename='/test.js')}}"
     ></script>
     {%endblock%}
     
@@ -32,7 +32,7 @@
             <p>the free shittipedia</p>
         </div>
         <div id="Logobar-Logo">
-            <img src="{{ url_for('static',filename='/ShiteLogo.png/')}}">
+            <img src="{{ url_for('static',filename='/ShiteLogo.png')}}">
         </div>
     </header>
     <nav id="navbar">
