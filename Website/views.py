@@ -12,7 +12,9 @@ def randImg():
 
 def getNames(img):
     names = []
-    with open(pathlib.Path('Website\static\ImgData.json'),'r') as jsonData:
+    #print(os.path.dirname(__file__),file=sys.stderr)
+
+    with open(pathlib.Path().cwd() / 'Website' / 'static' / 'ImgData.json','r') as jsonData:
         data = json.load(jsonData)
         keys = list(data.keys())
     
