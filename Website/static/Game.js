@@ -24,13 +24,34 @@ function drop(e){
     // Need to check if the containting div has text = to image name for correct/incorrect stuff
 
     pic = document.getElementById("dragpic");
+    imgLink = pic.src
+    imgLink = String(imgLink)
+    Dirs = imgLink.split('/')
+    image = null
+    Dirs.forEach(element => {
+        if (String(element).search('.jpg') != -1 ){
+            image = element
+        }
+    });
+    image = image.replace('.jpg','')    // this is raw name 
+    //console.log(image)
+    pic = document.getElementById("dragpic");
+    parent = pic.parentElement
+    ChooseText = parent.children[0].innerHTML
+
+    // detect if choice is correct
+    if (encodeURIComponent(ChooseText) == image){
+        parent.classList.add("correctPlace");
+    } else{
+        parent.classList.add("incorrectPlace");
+    }
+    console.log(ChooseText)
     pic.classList.add("placeAni");
     
-    // Remove Image in sync with animation (1s)
     setTimeout(function(){
         location.reload()
     },800)
-
+    
 
 }
 
@@ -43,10 +64,3 @@ document.addEventListener("keydown", (e) => {
     console.log('HI')
 });
 
-
-// Set image box texts
-/*
-for(var i = 1; i<9;i++){
-    document.getElementById(String(i)).textContent = String(i).concat(" hehe");
-}
-*/

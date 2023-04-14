@@ -48,14 +48,41 @@ body{
 }
 
 .placeAni{
-    animation: placeCorrect 1s ;
+    animation: place 1s ;
 }
 
-@keyframes placeCorrect {
+.correctPlace{
+    animation: placeBGCorrect 1s ;
+}
+
+.incorrectPlace{
+    animation: placeBGWrong 1s ;
+}
+
+@keyframes place {
 	0%{
 		opacity: 1;
 	}
 	100% {
 		opacity: 0;
 	}
+}
+
+@keyframes placeBGWrong {
+	from{
+		background-color: #f8f9fa;
+	}
+	to {
+		background-color: #ff9191;
+	}
+}
+
+@keyframes placeBGCorrect {
+	from{
+		background-color: #f8f9fa;
+	}
+	to {
+		background-color: #7effb2;
+	}
+    
 }

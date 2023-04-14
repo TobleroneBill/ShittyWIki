@@ -3,6 +3,7 @@ import pathlib,os,sys,random,json
 
 views = Blueprint('views',__name__)
 
+# Returns a single random image. Paths seem to start from 1 above main.py
 def randImg():
     imagePath = pathlib.Path().parent / 'Website' / 'static' / 'images'
     imageList = os.listdir(imagePath)
@@ -12,25 +13,18 @@ def randImg():
 
 def getNames(img):
     names = []
-    #print(os.path.dirname(__file__),file=sys.stderr)
-
     with open(pathlib.Path().cwd() / 'Website' / 'static' / 'ImgData.json','r') as jsonData:
         data = json.load(jsonData)
         keys = list(data.keys())
     
     for i in range(0,7):
         index = random.randint(0,len(keys)-1)
-
-        if keys[index] == img:
+        if keys[index] == img:  # get another key if its the same as the original one to avoid duplicates
             index = random.randint(0,len(keys)-1)
 
         names.append(keys[index])
     names.append(img)
-
-    print(names,file=sys.stderr)
-
-    random.shuffle(names)
-
+    random.shuffle(names)   # Shuffles to randomize positions
     return names
     
 
