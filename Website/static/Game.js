@@ -21,6 +21,8 @@ function drop(e){
     var data = e.dataTransfer.getData("text");
     e.target.appendChild(document.getElementById(data));
     
+    // Need to check if the containting div has text = to image name for correct/incorrect stuff
+
     pic = document.getElementById("dragpic");
     pic.classList.add("placeAni");
     
@@ -43,6 +45,8 @@ document.addEventListener("keydown", (e) => {
 
 
 // Set image box texts
+/*
 for(var i = 1; i<9;i++){
     document.getElementById(String(i)).textContent = String(i).concat(" hehe");
 }
+*/

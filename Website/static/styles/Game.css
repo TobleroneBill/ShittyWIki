@@ -1,7 +1,6 @@
 /* global settings   background-image: linear-gradient(red, yellow);*/
 body{
-    overflow-anchor: none;
-    
+    overflow-anchor: none;   
 }
 
 #title{
@@ -16,7 +15,6 @@ body{
 }
 
 .imagebox{
-
     border: 1px solid #c8ccd1;
     font-size: 94%;
     background-color: #f8f9fa;

@@ -12,28 +12,48 @@
     <h2 id="title"> DA GAME</h2>
     
     <div id="gamediv">
-        <div class="imagebox" id="1" ondragover="allowDrop(event)" ondrop="drop(event)"> 1 </div>
-        <div class="imagebox" id="2" ondragover="allowDrop(event)" ondrop="drop(event)"> 2 </div>
-        <div class="imagebox" id="3" ondragover="allowDrop(event)" ondrop="drop(event)"> 3 </div>
+    
+        <div class="imagebox" id="1" ondragover="allowDrop(event)" ondrop="drop(event)">
+            <p id="imageboxText">{{names[0]}}</p>
+        </div>
+
+        <div class="imagebox" id="2" ondragover="allowDrop(event)" ondrop="drop(event)"> 
+            <p id="imageboxText">{{names[1]}}</p>
+        </div>
+        
+        <div class="imagebox" id="3" ondragover="allowDrop(event)" ondrop="drop(event)"> 
+            <p id="imageboxText"> {{names[2]}}</p>
+        </div>
     </div>
 
     <div id="gamediv">
-        <div class="imagebox" id="4" ondragover="allowDrop(event)" ondrop="drop(event)"> 4 </div>
+        <div class="imagebox" id="4" ondragover="allowDrop(event)" ondrop="drop(event)"> 
+            <p id="imageboxText"> {{names[3]}} </p>
+        </div>
         <div class="imagebox">
             <p><b>Image</b></p>
-            <img id="dragpic" draggable="true" src="{{img}}"> 
+            <img id="dragpic" draggable="true" src="{{img[0]}}"> 
         </div>
-        <div class="imagebox" id="5" ondragover="allowDrop(event)" ondrop="drop(event)"> 6 </div>
+        <div class="imagebox" id="5" ondragover="allowDrop(event)" ondrop="drop(event)"> 
+            <p id="imageboxText"> {{names[4]}} </p>
+        </div>
     </div>
 
     <div id="gamediv">
-        <div class="imagebox" id="6" ondragover="allowDrop(event)" ondrop="drop(event)"> 7 </div>
-        <div class="imagebox" id="7" ondragover="allowDrop(event)" ondrop="drop(event)"> 8 </div>
-        <div class="imagebox" id="8" ondragover="allowDrop(event)" ondrop="drop(event)"> 9 </div>
+        <div class="imagebox" id="6" ondragover="allowDrop(event)" ondrop="drop(event)"> 
+            <p id="imageboxText"> {{names[5]}} </p>
+        </div>
+        <div class="imagebox" id="7" ondragover="allowDrop(event)" ondrop="drop(event)"> 
+            <p id="imageboxText"> {{names[6]}} </p>
+        </div>
+        <div class="imagebox" id="8" ondragover="allowDrop(event)" ondrop="drop(event)"> 
+            <p id="imageboxText"> {{names[7]}} </p>
+        </div>
     </div>
 </div>
 
 </div>
 
 <script src="{{ url_for('static', filename='Game.js') }}"></script>
+<script>console.log('{{img[1][0]}}')</script>
 {%endblock%}
