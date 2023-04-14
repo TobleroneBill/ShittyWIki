@@ -7,6 +7,7 @@
 
 
 {%block content%}
+
 <div id="game">
     <h2 id="title"> DA GAME</h2>
     
@@ -20,7 +21,7 @@
         <div class="imagebox" id="4" ondragover="allowDrop(event)" ondrop="drop(event)"> 4 </div>
         <div class="imagebox">
             <p><b>Image</b></p>
-            <img id="dragpic" draggable="true" src="{{ url_for('static', filename='images/94th Academy Awards.jpg') }}"> 
+            <img id="dragpic" draggable="true" src="{{img}}"> 
         </div>
         <div class="imagebox" id="5" ondragover="allowDrop(event)" ondrop="drop(event)"> 6 </div>
     </div>

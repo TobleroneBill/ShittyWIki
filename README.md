@@ -12,4 +12,3 @@ This uses a combo of a previous automation project, NFTGETTER to create the imag
 after scraping  the top 500 wikipedia pages of 2022, I used my LargeScalePaste.py script which uses pillow to add a random piece of shit to the image. This was done to every single image, scaled to 500x500px and JPG compressed to epic proportions:
 
 ![image desc](./lol.gif)
-
