@@ -12,7 +12,7 @@ def randImg():
 
 def getNames(img):
     names = []
-    with open(r'Website\static\ImgData.json','r') as jsonData:
+    with open(pathlib.Path('Website\static\ImgData.json'),'r') as jsonData:
         data = json.load(jsonData)
         keys = list(data.keys())
     
@@ -21,7 +21,7 @@ def getNames(img):
 
         if keys[index] == img:
             index = random.randint(0,len(keys)-1)
-            
+
         names.append(keys[index])
     names.append(img)
 
