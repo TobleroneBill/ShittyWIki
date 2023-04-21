@@ -16,8 +16,9 @@ The minimum game features are in place:
 - Drag and drop the image on the correct square
 
 21/04/23 update:
-The big thing I want to do, is make an SQL database on my linoder server, that will be used by players to save theier data by logging in.
-The main reason is so I can learn SQL, but also because I think people would enjoy the progression of seeing thier collection of pngs get unlocked in the unlocks section. With this tech, I could also save other stuff like:
+
+The big thing I want to do, is make an SQL database on my linode server, that can be used by players to save their data by logging in.
+The main reason is so that I can learn SQL, but also because I think people would enjoy the progression of seeing thier collection of pngs get unlocked in the unlocks section. With this tech, I could also save other stuff like:
 - Time played
 - Right:Wrong ratio
 - how you stack up against other players in the database
