@@ -1,6 +1,7 @@
 # ShittyWiki
 
-Website can be found here: (NOT FINISHED)
+Website can be found here: http://85.159.215.95
+
 
 Using this tutorial: https://youtu.be/dam0GPOAvVI
 
